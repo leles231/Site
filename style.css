@@ -1,0 +1,156 @@
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(34,139,87,1);
+  scroll-behavior: smooth;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0,100,0, 0.6);
+  color: white;
+  padding: 1rem;
+}
+
+.logo img {
+  width: 30px;
+  margin-left: 10px;
+  vertical-align: middle;
+  clip-path: circle(50%);
+}
+
+/* Menu hambúrguer */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background: white;
+  height: 3px;
+  margin: 4px 0;
+  width: 25px;
+  border-radius: 2px;
+}
+
+/* Menu lateral */
+.sidebar {
+  position: fixed;
+  left: -200px;
+  top: 0;
+  height: 100%;
+  width: 200px;
+  background: rgba(34,139,87,1);
+  color: #90EE90;
+  padding-top: 2rem;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 1rem;
+  border-bottom: 1px solid #2f5e4e; /* separação das palavras */
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Seções do site */
+.section {
+  padding: 2rem;
+}
+
+.dark-green {
+  background: #193c2f;
+  color: white;
+}
+
+.dark-green .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #5d3b00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.light-green {
+  background: #cdeac0;
+  color: #193c2f;
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+
+/* Rodapé */
+footer {
+  background: #26532b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer img {
+  display: block;
+  margin: 0.5rem auto 0;
+  width: 30px;
+  clip-path: circle(60%);
+}
+
+/* Formulário */
+form input, form textarea, form select, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: rgba(0,100,0,0.7);
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #3e653e;
+}
+
+/* Mapa */
+#map {
+  width: 100%;
+  height: 300px;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+  
